@@ -7,15 +7,15 @@ using namespace std;
 int main(){
 
 int testaSeJogoAcaba = 0;
-int vet[][];
+int vet[3][3] = {0};
 
 int x;
 int y;
 
 int jogadorX = 0;
-int jogadorY = 1;
+int jogadorO = 1;
 
-while(acabaJogo == 0;){
+while(testaSeJogoAcaba == 0){
 
 cout << "Vez do Jogador X" << endl;
 cout << "Escolha as coordenadas que deseja: " << endl;
@@ -25,8 +25,11 @@ cin >> x;
 cout << "Coordenada Y: ";
 cin >> y;
 
-insere(x, y, jogadorX);
-testaSeJogoAcaba = acabaJogo();
+insere(vet, x, y, jogadorX);
+cout << "Como a tabela se encontra: ";
+imprime(vet);
+
+testaSeJogoAcaba = acabaJogo(vet);
 
 cout << "Vez do Jogador Y" << endl;
 cout << "Escolha as coordenadas que deseja: " << endl;

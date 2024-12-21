@@ -10,6 +10,16 @@ void FuncoesMatriz::insere(int x, int y, int jogador) {
 
 
 void FuncoesMatriz::acabaJogo(int x, int y, int jogador) {
-	if()
-}
 
+    if (/* condition */) {
+    }
+
+void FuncoesMatriz::imprime(int vet) {
+            cout << vet[i][j];
+        for (int j = 0; j < 3; j++)
+        {
+            cout<< vet[i][j];
+        }
+        cout << endl;
+    }
+}
